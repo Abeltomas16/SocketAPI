@@ -1,0 +1,22 @@
+{
+  "name": "socketapi",
+  "version": "1.0.0",
+  "description": "API que recebe e manda mensagens via socket",
+  "engines": {
+    "node": ">= 15.5.1",
+    "npm": ">= 7.3.0"
+},
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "socketio",
+    "socket"
+  ],
+  "author": "Abel Tomás",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^4.4.0"
+  }
+}
