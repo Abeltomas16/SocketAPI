@@ -5,6 +5,4 @@ const handler = (req, res) => {
 }
 const server = htpp.createServer(handler)
 require('./Service/socket')(server)
-server.listen(3000, () => {
-    console.log('rodando')
-})
+server.listen(4000, "0.0.0.0")
