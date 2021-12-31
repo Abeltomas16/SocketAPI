@@ -1,8 +1,10 @@
 const socket = require('socket.io')
 function factorySocket(server) {
     const io = socket(server, {
-        origin: "*",
-        Credential: false
+        cors: {
+            origin: "*",
+            Credential: false
+        }
     })
     io.on("connection", (host) => {
         host.on("location", ({ localizacao }) => {
