@@ -5,4 +5,4 @@ const handler = (req, res) => {
 }
 const server = htpp.createServer(handler)
 require('./Service/socket')(server)
-server.listen(4000, "0.0.0.0")
+server.listen(80, "0.0.0.0")
